@@ -5,6 +5,8 @@
 #include "functions.h"
 
 //this function randamizes the story and player choose
+int weapons;
+int body;
 void randStroyandChoose()
 {
 	random_device rd; // obtain a random number from hardware

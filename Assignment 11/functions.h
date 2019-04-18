@@ -10,5 +10,3 @@ std::string GetCharacterName();
 void welcomeUser(string CharacterName);
 void openingStory(string CharacterName);
 void randStroyandChoose();
-int weapons;
-int body;

@@ -22,11 +22,31 @@ int main()
 	CharacterName = GetCharacterName();
 	// here we use char name
 	welcomeUser(CharacterName);
+	//start play again loop here
+	bool playAgain = false;
+	char playAgainchoose;
+	do
+	{
+		
 
 	openingStory(CharacterName);
 
 	randStroyandChoose();
 
+	cout << "would you like to play again? Y/N ";
+	cin >> playAgainchoose;
+
+		if (playAgainchoose == 'y' || playAgainchoose == 'Y')
+		{
+			playAgain = true;
+		}
+		else
+		{
+			playAgain = false;
+		}
+	//end play again loop here
+	}
+	while (playAgain == true);
 
 	system("pause");
 	

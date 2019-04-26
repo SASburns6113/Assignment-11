@@ -20,7 +20,12 @@ void randStroyandChoose()
 	string selected = bodyArray[myRandNumber];
 
 	cout << selected;
-
+	//start my loop
+	bool isWeaponValid = true;
+	do
+	{
+		isWeaponValid = true;
+	
 	cout << "your weapons: Gun, Knife, Bat\n\n";
 	string choose;
 	cin >> choose;
@@ -36,9 +41,11 @@ void randStroyandChoose()
 	{
 		cout << "You found the murder weapon!\nYou Win!\n\n";
 	}
-	else if (choose != "gun", "bat", "knife")
+	else if (choose != "gun" && choose != "bat" && choose != "knife")
 	{
 		cout << "invalid, pick gun, knife, or bat.\n\n";
-
+		isWeaponValid = false;
 	}
+	} while (isWeaponValid == false);
+		//end my loop
 }
